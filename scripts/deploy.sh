@@ -5,6 +5,6 @@ PATH=$PATH:/home/nginx/.bun/bin
 cd apps/api
 bun install
 
-apps/site
+cd ../site
 bun install
 bun run build

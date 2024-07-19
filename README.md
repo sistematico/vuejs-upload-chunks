@@ -2,6 +2,8 @@
 
 Simple Vue.js & Bun upload chunks system.
 
+[![Deploy](https://github.com/sistematico/vuejs-upload-chunks/actions/workflows/deploy.yml/badge.svg)](https://github.com/sistematico/vuejs-upload-chunks/actions/workflows/deploy.yml)
+
 ## 📰 References
 
 - [Vue.js](https://vuejs.org)
