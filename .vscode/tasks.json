@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "SITE: dev",
+			"detail": "bunx --bun vite",
+			"type": "npm",
+			"script": "dev",
+			"path": "apps/site",
+			"problemMatcher": [],
+			"runOptions": {
+				"runOn": "folderOpen"	
+			}
+		},
+		{
+			"label": "API: dev",
+			"detail": "bun run --hot src/index.ts",
+			"type": "npm",
+			"script": "dev",
+			"path": "apps/api",
+			"problemMatcher": [],
+			"runOptions": {
+				"runOn": "folderOpen"	
+			}
+		}
+	]
+}

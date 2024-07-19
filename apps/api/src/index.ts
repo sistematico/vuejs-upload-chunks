@@ -37,7 +37,7 @@ const server = Bun.serve<{ socketId: number }>({
       removeClient(ws.data.socketId)
     }
   },
-  port: 6000
+  port: 5010
 })
 
 console.log(`Server running at http://localhost:${server.port}`)

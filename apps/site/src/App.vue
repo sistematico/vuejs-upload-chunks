@@ -11,6 +11,10 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
+  <div>
+    <label for="file">Choose a file:</label>
+    <input type="file" id="file" />
+  </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
