@@ -1,14 +1,13 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
+import { main } from '@/routes'
 import { addClient, removeClient, broadcastMessage } from '@/utils/websocket'
 
 const app = new Hono()
 
 app.use('*', cors())
 
-app.get('/', (c) => {
-  return c.text('Hono API')
-})
+app.route('/', main)
 
 app.notFound((c) => {
   return c.text('Rota não encontrada', 404)
@@ -29,7 +28,7 @@ const server = Bun.serve<{ socketId: number }>({
       addClient(socketId, ws)
     },
     message(ws, message) {
-      console.log(`Received ${message} from ${ws.data.socketId}`)
+      //console.log(`Received ${message} from ${ws.data.socketId}`)
       broadcastMessage(String(message))
     },
     close(ws) {

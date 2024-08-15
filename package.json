@@ -8,6 +8,7 @@
     "clean": "rm -rf node_modules bun.lockb apps/*/node_modules apps/*/bun.lockb"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "bun-types": "latest"
   },
   "peerDependencies": {

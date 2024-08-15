@@ -10,6 +10,9 @@
 			"problemMatcher": [],
 			"runOptions": {
 				"runOn": "folderOpen"	
+			},
+			"presentation": {
+				"reveal": "never"
 			}
 		},
 		{
@@ -21,6 +24,9 @@
 			"problemMatcher": [],
 			"runOptions": {
 				"runOn": "folderOpen"	
+			},
+			"presentation": {
+				"reveal": "never"
 			}
 		}
 	]
